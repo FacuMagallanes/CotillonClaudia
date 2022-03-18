@@ -158,6 +158,73 @@ legend {
     gap: 15px;
 }
 
+@media (min-width: 320px) {
+    /* ---------- TOPBAR ---------- */
+    .header__topBar--img {
+        padding: 1vh;
+        width: 10vw;
+    }
+
+    /* ---------- MAIN ---------- */
+    .main__icon--socialmedia {
+        width: 18vw;
+        padding: 2vh;
+    }
+
+    .main__maps--size {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 425px) {
+    /* ---------- TOPBAR ---------- */
+    .header__topBar--img {
+        padding: 1vh;
+        width: 8vw;
+    }
+
+    /* ---------- MAIN ---------- */
+    .main__icon--socialmedia {
+        width: 14vw;
+        padding: 2vh;
+    }
+
+    .main__maps--size {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 590px) {
+    h3 {
+        padding: 1rem;
+    }
+    
+    /* ---------- TOPBAR ---------- */
+    .header__topBar--img {
+        width: 7vw;
+        padding: 1vh;
+    }
+
+    /* ---------- NAV ---------- */
+    .header__logo {
+        width: 45vw;  
+    }
+
+    /* ---------- MAIN ---------- */
+    .main__icon--socialmedia {
+        width: 12vw;
+        padding: 2vh;
+    }
+
+    .main__maps--size {
+        padding: 3rem;
+    }
+
+    .header__nav--list {
+        font-size: 12pt;
+    }
+}
+
 @media (min-width: 768px) {
     /* ---------- TOPBAR ---------- */
     .header__topBar--img {
@@ -170,13 +237,18 @@ legend {
         width: 36vw;  
     }
 
+    .header__nav--list {
+        font-size: 12pt;
+    }
+
     /* ---------- MAIN ---------- */
     .main__section--icons {
         width: 16vw;
     }
 
     .main__icon--socialmedia {
-        width: 10vw;
+        width: 11vw;
+        margin: 1rem;
     }
 }
 
@@ -185,17 +257,58 @@ legend {
     h4 {
         font-family: lato;
         font-weight: 200;
-        font-size: 11pt;
+        font-size: 13pt;
         color: #ffffff ;    
     }
 
-    .aboutUs__main--grid {
+    .color__text2 {
+        color: #ffffff;
+    }
+
+    .paddingSmall {
+        padding: 2.5vh;
+    }
+
+    .paddingLarge {
+        padding: 10vh;
+    }
+    
+    .flex__desktop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }   
+    
+    /* ---------- TOPBAR ---------- */
+    .header__topBar--img {
+        padding: 1vh;
+        width: 4vw;
+    }
+
+    /* ---------- NAV ---------- */
+    .header__logo {
+        width: 20vw;  
+    }
+
+    .header__nav--list {
+        font-family: poppins;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 13pt;
+        padding: 0 2vh;
+        border-left: #ee529c 2px solid;
+    }
+
+    .header__nav--ul {
+        padding: 0;  
+    }
+
+    .main__aboutUs--grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "div1 div1 div2"
         "video video div3"
-        "video video div4"
-        "section section section";        
+        "video video div4"       
     }
 
     .div1Grid {
@@ -217,58 +330,28 @@ legend {
     .videoGrid {
         grid-area: video;
     }
-
-    .sectionGrid {
-        grid-area: section;
-    }
-
-    .color__text2 {
-        color: #ffffff;
-    }
-    
-    .flex__desktop {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }   
-    
-    /* ---------- TOPBAR ---------- */
-    .header__topBar--img {
-        padding: 1vh;
-        width: 3vw;
-    }
-
-    .header__logo {
-        width: 20vw;  
-    }
-
-    .header__nav--list {
-        font-family: poppins;
-        text-transform: uppercase;
-        color: #ffffff;
-        font-size: 15pt;
-        padding: 0 2vh;
-        border-left: #ee529c 2px solid;
-    }
-
+           
+    /* ---------- MAIN ---------- */
     .main__section--icons {
         width: 10vw;
     }
 
-    .paddingSmall {
-        padding: 2.5vh;
+    .main__section--media {
+        background-color: #682c84;
     }
 
-    .paddingLarge {
-        padding: 10vh;
+    .gridSocialMedia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .main__icon--socialmedia {
-        width: 6vw;
+        width: 8vw;
     }
 
-    .main__section--media {
-        background-color: #682c84;
+    .main__maps--size {
+        width: 50vw;
+        padding: 2rem;
     }
 
     .main__footer--nav {
@@ -277,6 +360,7 @@ legend {
         font-size: 12pt;
         flex-direction: column;
         text-align: left;
+        padding: 0 4rem;
     }
 
     .main__products--grid {
