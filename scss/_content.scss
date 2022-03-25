@@ -1,0 +1,42 @@
+.header__social--img {
+    background-color: rgba(237, 48, 135, .6);
+}
+
+.bg-pink {
+    background-color: #ed3087;
+}
+
+.section__social--img {
+    width: 10vw;
+}
+
+
+@media (min-width: 1024px) {
+    .main__aboutUs--grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "div1 div1 div2"
+        "video video div3"
+        "video video div4";       
+    }
+
+    .div1Grid {
+        grid-area: div1;
+    }
+
+    .div2Grid {
+        grid-area: div2;
+    }
+
+    .div3Grid {
+        grid-area: div3;
+    }
+
+    .div4Grid {
+        grid-area: div4;
+    }
+
+    .videoGrid {
+        grid-area: video;
+    }
+}

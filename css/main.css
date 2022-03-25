@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@500&display=swap");
+h2 {
+  font-size: 16pt; }
+
+h3 {
+  color: #682c84;
+  font-size: 14pt; }
+
+h4 {
+  font-size: 10pt;
+  font-weight: 400; }
+
+p {
+  font-family: "Lato", sans-serif; }
+
+.text-violet {
+  color: #682c84; }
+
+#navEdit {
+  background-color: white; }
+  #navEdit img {
+    width: 12vw; }
+  #navEdit a {
+    color: #682c84;
+    font-size: 12pt;
+    font-family: "Poppins", sans-serif; }
+
+.header__social--img {
+  background-color: rgba(237, 48, 135, 0.6); }
+
+.bg-pink {
+  background-color: #ed3087; }
+
+.section__social--img {
+  width: 10vw; }
+
+@media (min-width: 1024px) {
+  .main__aboutUs--grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "div1 div1 div2" "video video div3" "video video div4"; }
+  .div1Grid {
+    grid-area: div1; }
+  .div2Grid {
+    grid-area: div2; }
+  .div3Grid {
+    grid-area: div3; }
+  .div4Grid {
+    grid-area: div4; }
+  .videoGrid {
+    grid-area: video; } }
+
+footer {
+  background: linear-gradient(0deg, #682c84 0%, #682c84 55%, #a261c1 90%); }
