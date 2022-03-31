@@ -1,11 +1,79 @@
-#navEdit {
-    background-color: white;
-    img {
-        width: 12vw;
+//Header -----------------------------------------------------------
+header {
+    nav {
+        background-color: white;
+        div {
+            a {
+                img {
+                    width: 30vw;
+                }
+            }
+        
+            div {
+                ul {
+                    li {                        
+                        a {
+                            color: $colorText;
+                            font-weight: 600;
+                            font-family: $fontPoppins;
+                            font-size: 12pt;
+                        }
+                        a:active {
+                            color:#ed3087;
+                        }
+                    }
+                }
+            }
+        }
     }
-    a {
-        color: $textColor;
-        font-size: 12pt;
-        font-family: $fontMain;
+}
+
+//Media queries ---------------------------------------------------------------
+
+@media (min-width: 768px) {
+    //Logo -----
+    header {
+        nav {
+            div {
+                a {
+                    img {
+                        width: 20vw;
+                    }
+                }
+            }
+        } 
+    }
+
+}
+
+@media (min-width: 1024px) {
+    //Logo -----
+    header {
+        nav {
+            div {
+                a {
+                    img {
+                        width: 14vw;
+                    }
+                }
+            }
+        } 
+    }
+    
+    //Border style for li -----
+    header {
+        nav {
+            div {
+                div {
+                    ul {
+                        li {
+                            a {
+                            border-bottom: 2px solid rgba(237, 48, 135, 0.6);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

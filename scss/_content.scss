@@ -1,17 +1,143 @@
-.header__social--img {
-    background-color: rgba(237, 48, 135, .6);
+//Social media header ----------------------------------------
+div {
+    div {        
+        a {
+            img {
+                width: 6vw;
+            }
+        }
+    }
 }
 
-.bg-pink {
-    background-color: #ed3087;
+//Main --------------------------------------------------------------
+//Icons information -----
+main {
+    section {
+        div {
+            div {
+                img {
+                    width: 26vw;  
+                }
+            }
+        }
+    }
+
+    h2 {
+        background-color: $colorBg;
+    }
+    //Social media main -----
+    section {
+        div {
+            div {
+                a {
+                    img {
+                        width: 14vw;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.section__social--img {
-    width: 10vw;
+//Media queries -----------------------------------------------------------------------
+@media (min-width: 540px) {
+    //Social media main -----
+    main {
+        section {
+            div {
+                div {
+                    a {
+                        img {
+                            width: 12vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
+@media (min-width: 768px) {
+    //Social media header -----
+    div {
+        div {
+            a {
+                img {
+                    width: 4vw;
+                }
+            }
+        }
+    } 
+    
+    //Icons information -----
+    main {
+        section {
+            div {
+                div {
+                    img {
+                        width: 16vw;  
+                    }
+                }
+            }
+        }
+    }
+    
+    //Social media main -----
+    main {
+        section {
+            div {
+                div {
+                    a {
+                        img {
+                            width: 8vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (min-width: 1024px) {
+    //Social media header -----
+    div {
+        div {
+            a {
+                img {
+                    width: 3vw;
+                }
+            }
+        }
+    }
+    
+    //Icons information -----
+    main {
+        section {
+            div {
+                div {
+                    img {
+                        width: 12vw;  
+                    }
+                }
+            }
+        }
+    }
+
+    //Social media main -----
+    main {
+        section {
+            div {
+                div {
+                    a {
+                        img {
+                            width: 6vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .main__aboutUs--grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -38,5 +164,18 @@
 
     .videoGrid {
         grid-area: video;
+    }
+}
+
+@media (min-width: 1440px) {
+    //Social media header -----
+    div {
+        div {
+            a {
+                img {
+                    width: 3vw;
+                }
+            }
+        }
     }
 }
