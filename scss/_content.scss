@@ -26,8 +26,12 @@ main {
     h1, h2 {
         background: linear-gradient(90deg,#ed3087 0%, #682c84 50%, #00b2d8 100%);
         color: map-get($map: $paleta, $key: 'text2');
-        box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.6) inset;        
+        box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.6) inset;
     }
+
+        h2 {
+            border-radius: 20px;
+        }
     
     //Social media main -----
     section {
@@ -185,5 +189,12 @@ main {
 }
 
 .buttonFacu1 {
-    @include button1;
+    @include button1(transparent, map-get($map: $paleta, $key: 'bg1'));
+}
+
+.buttonFacu2 {
+    @include button1(transparent, black);
+    &:hover {
+        background: linear-gradient(90deg,#ed3087 0%, #682c84 50%, #00b2d8 100%);
+        }
 }

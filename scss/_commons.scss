@@ -1,5 +1,7 @@
 //definimos variables
 
+//Gradient
+
 //map
 $paleta: (
     'bg1':#ed3087,
@@ -10,11 +12,12 @@ $paleta: (
     'text3': #00b2d8,
     'text4': #525151,
     'bord1': rgba(255, 53, 147, 0.7),);
+    
 
 
 //mixin
-@mixin button1{
-    background-color: transparent;
+@mixin button1($bg-color,$hover-color) {
+    background-color: $bg-color;
     border-radius: 0.6em;
     border: 1px solid map-get($map: $paleta, $key: 'bg1');
     color: map-get($map: $paleta, $key: 'text4');
@@ -26,7 +29,7 @@ $paleta: (
     transition: all 400ms;    
     &:hover {
         color: #fff;
-        background-color: map-get($map: $paleta, $key: 'bg1');
+        background-color: $hover-color;
         box-shadow: rgba(0, 0, 0, 0.3) 0 8px 15px;
         transform: translateY(-2.5px);
     }

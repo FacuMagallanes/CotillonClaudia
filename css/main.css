@@ -53,6 +53,9 @@ main h1, main h2 {
   color: #ffffff;
   box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.6) inset; }
 
+main h2 {
+  border-radius: 20px; }
+
 main section div div a img {
   width: 14vw; }
 
@@ -113,6 +116,28 @@ main section div div a img {
   .buttonFacu1:active {
     box-shadow: none;
     transform: translateY(0); }
+
+.buttonFacu2 {
+  background-color: transparent;
+  border-radius: 0.6em;
+  border: 1px solid #ed3087;
+  color: #525151;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0.2em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 400ms; }
+  .buttonFacu2:hover {
+    color: #fff;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 8px 15px;
+    transform: translateY(-2.5px); }
+  .buttonFacu2:active {
+    box-shadow: none;
+    transform: translateY(0); }
+  .buttonFacu2:hover {
+    background: linear-gradient(90deg, #ed3087 0%, #682c84 50%, #00b2d8 100%); }
 
 footer {
   background-color: #5f5f5f; }
