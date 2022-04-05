@@ -20,15 +20,16 @@ $paleta: (
     background-color: $bg-color;
     border-radius: 0.6em;
     border: 1px solid map-get($map: $paleta, $key: 'bg1');
+    text-decoration: none;
     color: map-get($map: $paleta, $key: 'text4');
     font-family: $fontPoppins;
     margin: 0;
     padding: 0.2em 1.5em;
     text-align: center;
-    text-decoration: none;
-    transition: all 400ms;    
+    transition: all 400ms;
+    a {color: map-get($map: $paleta, $key: 'text4');}    
     &:hover {
-        color: #fff;
+        a{color: #ffffff;}
         background-color: $hover-color;
         box-shadow: rgba(0, 0, 0, 0.3) 0 8px 15px;
         transform: translateY(-2.5px);

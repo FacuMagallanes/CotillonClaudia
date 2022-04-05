@@ -193,8 +193,8 @@ main {
 }
 
 .buttonFacu2 {
-    @include button1(transparent, black);
+    @include button1(transparent, white);
     &:hover {
         background: linear-gradient(90deg,#ed3087 0%, #682c84 50%, #00b2d8 100%);
-        }
+    }
 }
