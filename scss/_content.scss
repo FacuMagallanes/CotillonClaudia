@@ -1,6 +1,6 @@
 //Social media header ----------------------------------------
 div {
-    div {        
+    div {      
         a {
             img {
                 width: 6vw;
@@ -10,6 +10,7 @@ div {
 }
 
 //Main --------------------------------------------------------------
+
 //Icons information -----
 main {
     section {
@@ -22,9 +23,12 @@ main {
         }
     }
 
-    h2 {
-        background-color: $colorBg;
+    h1, h2 {
+        background: linear-gradient(90deg,#ed3087 0%, #682c84 50%, #00b2d8 100%);
+        color: map-get($map: $paleta, $key: 'text2');
+        box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.6) inset;        
     }
+    
     //Social media main -----
     section {
         div {
@@ -104,7 +108,7 @@ main {
         div {
             a {
                 img {
-                    width: 3vw;
+                    width: 2.2vw;
                 }
             }
         }
@@ -130,7 +134,7 @@ main {
                 div {
                     a {
                         img {
-                            width: 6vw;
+                            width: 4vw;
                         }
                     }
                 }
@@ -178,4 +182,8 @@ main {
             }
         }
     }
+}
+
+.buttonFacu1 {
+    @include button1;
 }

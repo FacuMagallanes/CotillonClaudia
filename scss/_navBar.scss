@@ -2,6 +2,7 @@
 header {
     nav {
         background-color: white;
+        box-shadow: 0px 3px 17px -7px rgba(0,0,0,0.5);
         div {
             a {
                 img {
@@ -11,15 +12,17 @@ header {
         
             div {
                 ul {
-                    li {                        
-                        a {
-                            color: $colorText;
-                            font-weight: 600;
+                    li { 
+                        a {                       
+                            color: map-get($map: $paleta, $key: 'text1');
+                            font-weight: 500;
                             font-family: $fontPoppins;
                             font-size: 12pt;
-                        }
-                        a:active {
-                            color:#ed3087;
+                            text-decoration: none;
+                            padding: 4px;
+                            &:hover {
+                                color: map-get($map: $paleta, $key: 'text3');
+                            }
                         }
                     }
                 }
@@ -53,7 +56,7 @@ header {
             div {
                 a {
                     img {
-                        width: 14vw;
+                        width: 12vw;
                     }
                 }
             }
@@ -68,7 +71,7 @@ header {
                     ul {
                         li {
                             a {
-                            border-bottom: 2px solid rgba(237, 48, 135, 0.6);
+                            border-bottom: 1px solid #00b2d8;
                             }
                         }
                     }

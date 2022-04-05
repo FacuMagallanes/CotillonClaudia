@@ -3,17 +3,25 @@
 $fontPoppins: 'Poppins', sans-serif;
 $fontLato: 'Lato', sans-serif;
 
-h2 {
-    color: $colorText;
-    font-size: 14pt;
+.tipografPoppins {
+    color: map-get($map: $paleta, $key: 'text1');
     font-family: $fontPoppins;
 }
 
-h3 {
-    color: $colorText;
-    font-size: 12pt;
-    font-family: $fontPoppins;
+h1 {
+    @extend .tipografPoppins;
 }
+
+h2 {
+    @extend .tipografPoppins;
+    font-size: 14pt;
+}
+
+h3 {
+    @extend .tipografPoppins;
+    font-size: 12pt;
+}
+
 h4 {
     font-size: 10pt;
     font-weight: 400;
