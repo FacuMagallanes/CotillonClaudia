@@ -190,6 +190,9 @@ main {
 
 .buttonFacu1 {
     @include button1(transparent, map-get($map: $paleta, $key: 'bg1'));
+    &:hover {
+        color: map-get($map: $paleta, $key: 'text2');
+    }
 }
 
 .buttonFacu2 {

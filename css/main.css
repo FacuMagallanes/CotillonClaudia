@@ -125,6 +125,8 @@ main section div div a img {
   .buttonFacu1:active {
     box-shadow: none;
     transform: translateY(0); }
+  .buttonFacu1:hover {
+    color: #ffffff; }
 
 .buttonFacu2 {
   background-color: transparent;
